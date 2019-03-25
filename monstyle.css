@@ -1,0 +1,329 @@
+/*******/
+/* DOM */
+/*******/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+:root {
+  --couleur-principale: #d65f00;
+  --couleur-hover: #ff841f;
+}
+
+html,
+body {
+  background-color: #4F5858;
+  color: #FFF;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  background: url("http://www.nicholasgratton.com/images/header.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+h1 {
+  font-size: 3em;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  text-align: center;
+  line-height: calc(100vh - 190px);
+}
+
+h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.btn-success {
+  background-color: var(--couleur-principale);
+  transition: .3s;
+  margin: 25px 0;
+}
+
+.btn-success:hover {
+  background-color: var(--couleur-hover);
+  transition: .3s;
+}
+
+/******************/
+/*   NAVIGATION   */
+/******************/
+.navigbar {
+  background-color: rgba(214, 95, 0, .95);
+  height: 65px;
+  line-height: 65px;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigbar li {
+  color: #FFF;
+  display: inline-block;
+}
+
+.navigbar li a {
+  color: #FFF;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.navigbar a {
+  transition: .5s;
+}
+
+.navigbar a:hover {
+  color: #000;
+  text-decoration: none;
+  transition: .5s;
+  cursor: pointer;
+  background-color: var(--couleur-principale);
+}
+
+.navigbar ul li:last-child {
+  display: none;
+}
+
+.helv-bold {
+  font-weight: 800;
+}
+
+/**************/
+/*   ENTETE   */
+/**************/
+.header {
+  min-height: calc(100vh - 65px);
+  margin-top: 65px;
+  padding: 15px;
+  text-align: center;
+}
+
+.head-scroll {
+  font-size: 2em;
+  color: #FFF;
+}
+
+@-webkit-keyframes arrow-jump {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -0-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+}
+
+#arrow {
+  -webkit-animation: arrow-jump 1s infinite;
+  /* Safari 4+ */
+  -moz-animation: arrow-jump 1s infinite;
+  /* Fx 5+ */
+  -o-animation: arrow-jump 1s infinite;
+  /* Opera 12+ */
+  animation: arrow-jump 1s infinite;
+  /* IE 10+, Fx 29+ */
+}
+
+.fa-angle-down {
+  color: #000;
+}
+
+/************************/
+/*   CURRICULUM VITAE   */
+/************************/
+.cv {
+  min-height: calc(100vh - 65px);
+  background-color: #FFF;
+  color: #4F5858;
+  padding: 15 15px 45px 15px;
+}
+
+.cv h4 {
+  color: var(--couleur-principale, #d65f00);
+  margin: 25px 0 10px 0;
+}
+
+.cv h5 {
+  color: #000;
+}
+
+.cv-poste {
+  color: #6f7c7d;
+}
+
+.competences {
+  font-size: 0.75em;
+}
+
+.fa-circle {
+  color: var(--couleur-principale, #d65f00);
+}
+
+.fa-circle-o {
+  color: #4F5858;
+}
+
+/*****************/
+/*   PORTFOLIO   */
+/*****************/
+.portfolio {
+  background-color: #a6abac;
+  padding: 15px 15px 45px 15px;
+}
+
+.portfolio a {
+  color: #4F5858;
+  transition: .3s;
+}
+
+.portfolio a:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.desc-proj {
+  padding: 15px 0;
+}
+
+.desc-proj ul {
+  padding: 5px 0;
+}
+
+.desc-proj i {
+  color: #DDD;
+}
+
+.tags {
+  padding: 0;
+  margin: 0;
+}
+
+.tags li {
+  color: #EEE;
+  font-size: .8em;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  margin: 2px;
+  display: inline-block;
+}
+
+.slider-desc {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-proj {
+  margin: 0;
+  padding: 0;
+}
+
+/****************/
+/*   CONTACT    */
+/****************/
+.contact {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 15px 45px 15px;
+}
+
+.mobile {
+  font-size: 3em;
+}
+
+.reseaux-soc li {
+  display: inline;
+  text-align: left;
+  font-size: 3em;
+  margin-right: 15px;
+}
+
+.reseaux-soc a:hover {
+  transition: .3s;
+  color: var(--couleur-hover);
+}
+
+/****************/
+/* PIED DE PAGE */
+/****************/
+.footer {
+  background-color: var(--couleur-principale, #d65f00);
+  padding: 15px;
+}
+
+.pied-nav li {
+  margin: 5px;
+}
+
+.footer a {
+  transition: .5s;
+  color: #f2f2f2;
+}
+
+.footer a:hover {
+  color: #4F5858;
+  text-decoration: none;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.footer h4 {
+  margin-top: 15px;
+}
+
+#copy {
+  font-size: 11px;
+  text-align: center;
+}
+
+#copy a {
+  text-decoration: none;
+  color: #4F5858;
+}
+
+/************************************/
+/*   REQUÈTES MÉDIAS / RESPONSIVE   */
+/************************************/
+@media screen and (max-width: 768px) {
+  body {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .topnav li:last-child {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .separation {
+    border-top: 1px solid #DDD;
+    margin-top: 20px;
+  }
+}
